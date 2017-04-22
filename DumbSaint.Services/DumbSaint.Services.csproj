@@ -53,11 +53,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NoteService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DumbSaint.Data\DumbSaint.Data.csproj">
+      <Project>{50b6492c-fa38-48bf-ae67-e244d17667de}</Project>
+      <Name>DumbSaint.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DumbSaint.Models\DumbSaint.Models.csproj">
+      <Project>{67e5d9db-b5bf-470c-acf2-bb12b8dcf511}</Project>
+      <Name>DumbSaint.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
