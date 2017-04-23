@@ -88,6 +88,26 @@ namespace DumbSaint.Web.Controllers
             return View();
         }
 
+        public ActionResult Delete(int id)
+        {
+            var service = CreateNoteService();
+            var model = service.GetNoteById(id);
+            
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteNote(int id)
+        {
+
+            var service = CreateNoteService();
+            service.DeleteNote(id);
+
+            TempData["SaveResult"] = "Your Note was deleted";
+            return RedirectToAction("Index");
+        }
 
         private NoteService CreateNoteService()
         {
