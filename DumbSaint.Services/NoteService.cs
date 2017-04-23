@@ -49,6 +49,7 @@ namespace DumbSaint.Services
                         {
                             NoteId = e.NoteId,
                             Title = e.Title,
+                            IsStarred = e.IsStarred,
                             CreatedUTC = e.CreatedUtc
                         }
                     );
