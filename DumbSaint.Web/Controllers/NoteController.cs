@@ -25,7 +25,7 @@ namespace DumbSaint.Web.Controllers
             return View();
         }
 
-
+        [ValidateInput(false)]
         [HttpPost]
         public ActionResult Create(NoteCreateModel model)
         {
