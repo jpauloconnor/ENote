@@ -201,6 +201,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\components\search_bar.js" />
+    <Content Include="app\components\video_description.js" />
+    <Content Include="app\components\video_detail.js" />
+    <Content Include="app\components\video_list.js" />
+    <Content Include="app\components\video_list_item.js" />
+    <Content Include="app\components\video_player.js" />
+    <Content Include="app\index.js" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\agency.css" />
@@ -213,6 +220,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="webpack.config.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
